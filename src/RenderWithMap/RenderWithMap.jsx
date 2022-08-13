@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import CardItem from "./CardItem";
 export default class RenderWithMap extends Component {
   state = {
     phone: [
@@ -187,21 +187,7 @@ export default class RenderWithMap extends Component {
         <div className="row">
           {this.state.phone.map((item, idx) => {
             return (
-              <div
-                key={idx.toString() + item.id}
-                className="col-lg-3 col-md-4 col-xs-6 my-3"
-              >
-                <div className={`card card-img card-${idx}`}>
-                  <img className="card-img-top" src={item.img} alt="" />
-                  <div className="card-body">
-                    <h4 className="card-title display-5">{item.name}</h4>
-                    <p className="card-price font-weight-bold">{item.price}</p>
-                    <a href="#" className="btn btn-primary mx-auto">
-                      Go somewhere
-                    </a>
-                  </div>
-                </div>
-              </div>
+              <CardItem key={idx.toString() + item.id} item={item}></CardItem>
             );
           })}
         </div>

@@ -5,8 +5,8 @@ import "./App.css";
 // import EventBinding from "./EventBinding/EventBinding";
 // import ConditionalRendering from "./ConditionalRendering/ConditionalRendering";
 // import DemoState from "./DemoState/DemoState";
-// import RenderWithMap from "./RenderWithMap/RenderWithMap";
-import DemoProps from "./DemoProps/DemoProps";
+import RenderWithMap from "./RenderWithMap/RenderWithMap";
+// import DemoProps from "./DemoProps/DemoProps";
 function App() {
   return (
     <div className="App">
@@ -24,8 +24,8 @@ function App() {
           Learn React
         </a> */}
         {/* <Ex_Layout></Ex_Layout> */}
-        {/* <RenderWithMap /> */}
-        <DemoProps />
+        <RenderWithMap />
+        {/* <DemoProps /> */}
       </header>
     </div>
   );
