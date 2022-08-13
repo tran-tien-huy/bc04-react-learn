@@ -1,11 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
-
+import logo from "./logo.svg";
+import "./App.css";
+// import Ex_Layout from "./Ex_Layout/Ex_Layout";
+// import DataBinding from "./DataBinding/DataBinding";
+// import EventBinding from "./EventBinding/EventBinding";
+// import ConditionalRendering from "./ConditionalRendering/ConditionalRendering";
+// import DemoState from "./DemoState/DemoState";
+// import RenderWithMap from "./RenderWithMap/RenderWithMap";
+import DemoProps from "./DemoProps/DemoProps";
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        {/* <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
@@ -16,7 +22,10 @@ function App() {
           rel="noopener noreferrer"
         >
           Learn React
-        </a>
+        </a> */}
+        {/* <Ex_Layout></Ex_Layout> */}
+        {/* <RenderWithMap /> */}
+        <DemoProps />
       </header>
     </div>
   );

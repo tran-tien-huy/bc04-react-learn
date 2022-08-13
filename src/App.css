@@ -1,38 +1,84 @@
-.App {
-  text-align: center;
-}
+/* quantity adjust css */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.quantity-adjust {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  transition: 0.5s;
+}
+/* --------------------- START QUANTITY ADJUST SECTION CSS */
+
+.quantity-adjust input.product__quantity {
+  outline: none;
+  width: 30px;
+  height: 30px;
+  font-size: 16px;
+  border: 1px solid rgba(0, 0, 0, 0.09);
+  border-left-width: 0;
+  border-right-width: 0;
+  transition: 0.5s;
+}
+
+.quantity-adjust input.product__quantity:focus {
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.09);
+  border-left-width: 0;
+  border-right-width: 0;
+}
+
+.quantity-adjust .btn-adjust {
+  --btn-size: 30px;
+  padding: 0.5rem 0.3rem;
+  border: 1px solid rgba(0, 0, 0, 0.09);
+  border-radius: 2px;
+  width: var(--btn-size);
+  height: var(--btn-size);
+
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  transition: 0.5s;
+}
+.quantity-adjust input:hover,
+.quantity-adjust .btn-adjust:hover {
+  border: 1px solid rgba(0, 0, 0, 0.4);
 }
 
-.App-link {
-  color: #61dafb;
+.quantity-adjust .btn-adjust.btn-up {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.quantity-adjust .btn-adjust.btn-down {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
 }
+
+.quantity-adjust .btn-adjust:hover,
+.quantity-adjust .btn-adjust:focus {
+  --bs-btn-hover-border-color: transparent;
+}
+
+.quantity-adjust .btn-adjust:active {
+  --bs-btn-active-border-color: transparent;
+}
+
+.quantity-adjust .btn-adjust img {
+  --img-size: 10px;
+  display: block;
+  width: var(--img-size);
+  height: var(--img-size);
+}
+/* --------------------- END QUANTITY ADJUST SECTION CSS */
+
+/* --------------------- START CARD IMAGE  CSS */
+.card-img {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+/* CUSTOM FONT DISPLAY */
+.display-5 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+/* --------------------- END CARD IMAGE  CSS */
